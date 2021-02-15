@@ -12,6 +12,7 @@
     top: 235px;
     background-image: url(../images/birds.png);
     margin-left: -15px;
+    transition: top .3s linear;
 }
 .start {
     position: absolute;
@@ -24,6 +25,7 @@
     line-height: 60px;
     font-weight: bolder;
     cursor: pointer;
+    transition: all .3s linear;
 }
 .start.start--white {
     color: #fff;
@@ -34,6 +36,7 @@
     font-size: 36px;
 }
 .score {
+    display: none;
     color: #fff;
     font-size: 24px;
     font-weight: bolder;
@@ -43,6 +46,7 @@
     /*文字居中translateX的%是按自身宽度调整的*/
 }
 .mask {
+    display: none;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -53,6 +57,7 @@
     /* 蒙层小办法 */
 }
 .end {
+    display: none;
     position: absolute;
     left: 50%;
     top: 70px;
