@@ -126,6 +126,7 @@
     width : 52px;
     height: 150px;
     z-index: 1;
+    background-color:#f5576c;
 }
 
 .pipe.pipe-up {
