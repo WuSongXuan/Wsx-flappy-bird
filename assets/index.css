@@ -3,10 +3,10 @@
     height: 600px;
     background-image: url('../images/sky.png');
     position: relative;
-}
+} 
 .bird {
     width: 30px;
-    height: 30px;
+    height: 30px; 
     position: absolute;
     left: 50%;
     top: 235px;
@@ -54,6 +54,7 @@
     right: 0;
     background-color: #000;
     opacity: .7;
+    z-index: 2;
     /* 蒙层小办法 */
 }
 .end {
@@ -64,6 +65,7 @@
     transform: translateX(-50%);
     /* color: red; */
     text-align: center;
+    z-index: 3;
 }
 .end .over {
     font-size: 35px;
@@ -100,10 +102,10 @@
     color: #fff;
     background-color: #8eb9f5;
 }
-.end .rank-degree.frist {
+.end .rank-degree.first {
     background-color: #f54545;
 }
-.end .rank-degree.sccond {
+.end .rank-degree.second {
     background-color: #ff8547;
 }
 .end .rank-degree.third {
@@ -118,4 +120,21 @@
     font-size: 18px;
     font-weight: bolder;
     cursor: pointer;
+}
+.pipe {
+    position : absolute;
+    width : 52px;
+    height: 150px;
+    z-index: 1;
+}
+
+.pipe.pipe-up {
+    top : 0px;
+    background-image: url(../images/pipe2.png);
+    background-position-y: bottom;
+}
+
+.pipe.pipe-botton {
+    bottom: 0px;
+    background-image: url(../images/pipe1.png);
 }
